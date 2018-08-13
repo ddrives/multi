@@ -1,6 +1,6 @@
 {
   "name": "@ddrive/multi",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Library For Managing Multiple dDrive Instances At Once.",
   "contributors": [
     "Jared Rice Sr. <jared@dwebs.io>",
@@ -18,14 +18,14 @@
     "map-limit": "0.0.1"
   },
   "devDependencies": {
-    "@ddrive/core": "ddrives/core#master",
-    "@dwcore/ref": "dwcore/ref#master",
-    "@dwcore/rem": "dwcore/rem#master",
+    "@ddrive/core": "*",
     "dependency-check": "^2.6.0",
     "istanbul": "^0.4.5",
     "memdb": "^1.3.1",
     "noop2": "^2.0.0",
     "nyc": "^10.0.0",
+    "random-access-file": "^1.3.1",
+    "random-access-memory": "^2.2.0",
     "rimraf": "^2.5.4",
     "standard": "^8.5.0",
     "tape": "^4.6.2",
