@@ -262,8 +262,8 @@ test('dDrive.close', function (t) {
           t.error(err)
           multiDDrive(store, createVault, noopCb, function (err, dDrive) {
             t.ifError(err, 'no err')
-            var errDPack = dDrive.list()[0]
-            dDrive.close(errDPack.data.key, function (err) {
+            var errDWeb = dDrive.list()[0]
+            dDrive.close(errDWeb.data.key, function (err) {
               t.ifError(err, 'no err')
               var dDrives = dDrive.list()
               t.equal(dDrives.length, 0, 'no dDrives left')

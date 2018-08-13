@@ -29,17 +29,17 @@ function multiDDrive (store, createVault, closeVault, cb) {
       value.key = key
       return value
     })
-    debug('found %s dpacks', values.length)
+    debug('found %s dwebs', values.length)
 
     function createWithoutError (data, cb) {
       try {
-        createVault(data, function (err, dpack) {
+        createVault(data, function (err, dweb) {
           if (err) {
             err.data = data
-            dpack = err
+            dweb = err
             err = null
           }
-          cb(err, dpack)
+          cb(err, dweb)
         })
       } catch (err) {
         err.data = data
